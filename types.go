@@ -171,6 +171,14 @@ type MessageItem struct {
 	Role MessageRole `json:"role"`
 	// The content of the item.
 	Content []MessageContentPart `json:"content"`
+	// The ID of the function call (for function_call and function_call_output items)
+	CallID string `json:"call_id,omitempty"`
+	// The name of the function being called (for function_call items).
+	Name string `json:"name,omitempty"`
+	// The arguments of the function call (for function_call items).
+	Arguments string `json:"arguments,omitempty"`
+	// The output of the function call (for function_call_output items).
+	Output string `json:"output,omitempty"`
 }
 
 type ResponseMessageItem struct {
