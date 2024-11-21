@@ -166,7 +166,7 @@ type MessageItem struct {
 	// The type of the item ("message", "function_call", "function_call_output").
 	Type MessageItemType `json:"type"`
 	// The final status of the item.
-	Status ItemStatus `json:"status"`
+	Status ItemStatus `json:"status,omitempty"`
 	// The role associated with the item.
 	Role MessageRole `json:"role"`
 	// The content of the item.
