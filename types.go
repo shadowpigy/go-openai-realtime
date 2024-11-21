@@ -162,7 +162,7 @@ type MessageContentPart struct {
 
 type MessageItem struct {
 	// The unique ID of the item.
-	ID string `json:"id"`
+	ID string `json:"id,omitempty"`
 	// The type of the item ("message", "function_call", "function_call_output").
 	Type MessageItemType `json:"type"`
 	// The final status of the item.
