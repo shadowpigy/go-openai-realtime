@@ -168,9 +168,9 @@ type MessageItem struct {
 	// The final status of the item.
 	Status ItemStatus `json:"status,omitempty"`
 	// The role associated with the item.
-	Role MessageRole `json:"role"`
+	Role MessageRole `json:"role,omitempty"`
 	// The content of the item.
-	Content []MessageContentPart `json:"content"`
+	Content []MessageContentPart `json:"content,omitempty"`
 	// The ID of the function call (for function_call and function_call_output items)
 	CallID string `json:"call_id,omitempty"`
 	// The name of the function being called (for function_call items).
